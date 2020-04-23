@@ -1,0 +1,87 @@
+$white = #ffffff
+
+$gray-light = #f8f8f8
+$gray = #999999
+$grayDark = #333333
+
+$blueDark = #333366
+
+$black = #000000
+
+text-big()
+  font-size 60px
+  line-height 1
+  letter-spacing -.03em
+
+text-mid()
+  font-size 20px
+  line-height (28 / 20)
+  letter-spacing -.03em
+
+text-small()
+  font-size 12px
+  line-height (20 / 12)
+
+table
+  text-mid()
+  font-weight 600
+
+  width 100%
+  border-spacing 0
+  color $black
+  border 0
+
+  td
+    border 0
+    vertical-align top
+
+.body
+  font-family Arial, Helvetica, sans-serif
+
+  width 760px
+  margin 0 auto
+  background $white
+
+  &__inner
+    padding 60px
+
+a
+  color $blueDark
+
+.container
+  padding-left 40px
+  padding-right 40px
+
+.main-section
+  padding 40px
+  background $gray-light
+
+.header
+  padding-bottom 9px
+  border-bottom 2px solid $black
+
+.main-title
+  text-big()
+  text-align center
+  padding-top 72px
+  padding-bottom 60px
+
+.message
+  text-mid()
+  text-align center
+  padding-bottom 55px
+
+.button
+  text-mid()
+  display block
+  text-align center
+  background $grayDark
+  color $white
+  text-decoration none
+  padding 24px 25px 28px
+
+.footer
+  text-small()
+  text-align center
+  padding-top 14px
+  padding-bottom 40px

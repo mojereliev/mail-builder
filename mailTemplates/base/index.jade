@@ -1,0 +1,48 @@
+include ../mixins/table
+
+html(lang="en", class="l-html")
+  head
+    meta(charset="utf-8")
+    title Email
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name="viewport", content="width=device-width,initial-scale=1,maximum-scale=1")
+    link(href='./styles.css' rel='stylesheet')
+
+  body
+    +table.body
+      tr
+        td.body__inner
+          +table
+            tr
+              td.main-section.container
+                +table
+                  tr
+                    td.header
+                      img(src=("./images/logo.jpg"), width="256", height="256", alt="Email")
+
+                +table
+                  tr
+                    td.main-title Subscription
+
+                +table
+                  tr
+                    td.message
+                      | To complete the subscription process,
+                      br
+                      | please click the
+                      a(href="http://email.com/" target="_blank") link in the email
+                      br
+                      | we just sent
+                      br
+                      | you.
+
+                +table
+                  tr
+                    td.button-wrapper
+                      a.button(href="http://email.com/" target="_blank") Yes, subscribe me to this list.
+
+      tr
+        td.footer.container
+          | Email.
+          br
+          | Copyright © 2017. All rights reserved.
